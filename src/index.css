@@ -35,3 +35,7 @@ img{
 .hide-pro{
   @apply absolute bottom-0 w-full p-4 bg-[#040836] text-white left-0 hidden
 }
+/* resume section */
+.title-btn{
+  @apply p-4 text-center rounded-full hover:bg-red-700 font-medium
+}
