@@ -5,8 +5,7 @@
 body{
   font-family: 'Manrope', sans-serif;
   background-image: url(/bg-banner.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
   color: #fff;
 }
 img{
@@ -14,6 +13,6 @@ img{
   max-height: 100%;
 }
 .my-container{
-  @apply max-w-screen-lg mx-auto
+  @apply max-w-[1120px] mx-auto
 }
 /* #FF014F  */
