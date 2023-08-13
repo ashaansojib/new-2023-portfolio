@@ -5,7 +5,10 @@
 body{
   font-family: 'Manrope', sans-serif;
   background-image: url(/bg-banner.jpg);
-  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top left;
+  background-repeat: repeat-x;
   color: #fff;
 }
 img{
@@ -16,3 +19,19 @@ img{
   @apply max-w-[1120px] mx-auto
 }
 /* #FF014F  */
+
+/* projects section css */
+.project-info{
+  @apply block
+}
+.show-pro{
+  @apply border relative hover:border border-green-600
+}
+.show-pro:hover .hide-pro{
+  display: block;
+  transform: scaleY(1);
+  transition: all 1s;
+}
+.hide-pro{
+  @apply absolute bottom-0 w-full p-4 bg-[#040836] text-white left-0 hidden
+}
