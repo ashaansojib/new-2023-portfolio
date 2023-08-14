@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
+    const [projects, setProjects] = useState([]);
+    useEffect(() => {
+        fetch('/projects.json')
+            .then(res => res.json())
+            .then(data => setProjects(data))
+    }, [])
+    console.log(projects)
     return (
         <section className='my-container py-20'>
             <div className='text-center pb-8'>
@@ -9,7 +17,23 @@ const Project = () => {
             </div>
             {/* projects area */}
             <div className='grid grid-cols-3 gap-6 justify-between'>
-                <div className='show-pro'>
+                {
+                    projects.map((pro) => <div
+                        key={pro._id} className='show-pro'>
+                        <div className=''>
+                            <img src={pro.imgLink} alt="" />
+                        </div>
+                        <div className='hide-pro'>
+                            <p className='text-xl'>EdTech - Learning English</p>
+                            <div className='flex gap-2'>
+                                <Link to={pro.pLink}><button className='underline p-1'>Live Site</button></Link>
+                                <Link to={pro?.frontend}><button className='underline p-1'>FrontEnd</button></Link>
+                                <Link to={pro?.backend}><button className='underline p-1'>Backend</button></Link>
+                            </div>
+                        </div>
+                    </div>)
+                }
+                {/* <div className='show-pro'>
                     <div className=''>
                         <img src="/pro.jpg" alt="" />
                     </div>
@@ -34,20 +58,7 @@ const Project = () => {
                             <button className='underline p-1'>Backend</button>
                         </div>
                     </div>
-                </div>
-                <div className='show-pro'>
-                    <div className=''>
-                        <img src="/pro.jpg" alt="" />
-                    </div>
-                    <div className='hide-pro'>
-                        <p className='text-xl'>EdTech - Learning English</p>
-                        <div className='flex gap-2'>
-                            <button className='underline p-1'>Live</button>
-                            <button className='underline p-1'>FrontEnd</button>
-                            <button className='underline p-1'>Backend</button>
-                        </div>
-                    </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

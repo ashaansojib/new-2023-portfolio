@@ -19,9 +19,9 @@ const Nav = () => {
     return (
         <nav className={`p-2 sticky top-0 z-10 border-b border-gray-600 ${scrollBg ? 'bg-[#003d63] border-none transition' : ''}`}>
             <div className='my-container'>
-                <div className='md:flex justify-between items-center gap-2 py-2'>
-                    <div>
-                        <Link to="/"><h2 className='text-2xl font-semibold'>Sojib</h2></Link>
+                <div className='md:flex justify-between items-center gap-2'>
+                    <div className='h-[58px]'>
+                        <Link to="/"><img src="/LogoMakr-32wxDu.png" alt="" /></Link>
                     </div>
                     <div className='grow'>
                         <ul className='md:flex justify-end gap-2'>

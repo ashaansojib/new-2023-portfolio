@@ -55,7 +55,7 @@ const Header = () => {
               >
                 <FaFacebook />
               </Link>
-              <Link
+              <Link to="https://www.linkedin.com/in/ashaansojib/"
                 className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
                 data-tip="My Linkedin"
               >
