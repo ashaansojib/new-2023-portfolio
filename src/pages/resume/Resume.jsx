@@ -2,6 +2,7 @@ import React from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import Bio from "./Bio";
 import Skill from "./Skill";
+import Education from "./Education";
 const Resume = () => {
 
   const biography = () => {
@@ -18,7 +19,7 @@ const Resume = () => {
             <Skill />
           </TabPanel>
           <TabPanel>
-            
+            <Education />
           </TabPanel>
           {/* section titile bar */}
           <TabList>
