@@ -19,7 +19,12 @@ img{
   @apply max-w-[1120px] mx-auto
 }
 /* #FF014F  */
-
+.active{
+  @apply px-4 py-2 rounded-lg bg-[#FF014F] font-medium
+}
+.default{
+  @apply px-4 py-2 rounded-lg hover:bg-[#FF014F] font-medium
+}
 /* projects section css */
 .project-info{
   @apply block

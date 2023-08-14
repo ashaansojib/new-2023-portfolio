@@ -2,7 +2,7 @@ import React from 'react';
 
 const Service = () => {
     return (
-        <section className='my-container bg-[#022642] px-4 py-20'>
+        <section className='my-container bg-[#022642] px-6 py-20'>
             {/* section title */}
             <div className='text-center pb-8'>
                 <p>MY EXPERIENCE</p>
