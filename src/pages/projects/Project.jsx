@@ -33,32 +33,6 @@ const Project = () => {
                         </div>
                     </div>)
                 }
-                {/* <div className='show-pro'>
-                    <div className=''>
-                        <img src="/pro.jpg" alt="" />
-                    </div>
-                    <div className='hide-pro'>
-                        <p className='text-xl'>EdTech - Learning English</p>
-                        <div className='flex gap-2'>
-                            <button className='underline p-1'>Live</button>
-                            <button className='underline p-1'>FrontEnd</button>
-                            <button className='underline p-1'>Backend</button>
-                        </div>
-                    </div>
-                </div>
-                <div className='show-pro'>
-                    <div className=''>
-                        <img src="/pro.jpg" alt="" />
-                    </div>
-                    <div className='hide-pro'>
-                        <p className='text-xl'>EdTech - Learning English</p>
-                        <div className='flex gap-2'>
-                            <button className='underline p-1'>Live</button>
-                            <button className='underline p-1'>FrontEnd</button>
-                            <button className='underline p-1'>Backend</button>
-                        </div>
-                    </div>
-                </div> */}
             </div>
         </section>
     );

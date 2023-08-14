@@ -42,5 +42,5 @@ img{
 }
 /* resume section */
 .title-btn{
-  @apply p-4 text-center rounded-full hover:bg-red-700 font-medium
+  @apply p-4 text-center rounded-full hover:bg-[#FF014F] font-medium  w-full inline-block
 }
