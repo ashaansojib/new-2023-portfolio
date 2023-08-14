@@ -2,13 +2,13 @@ import React from 'react';
 
 const Project = () => {
     return (
-        <section className='my-container px-4 py-20'>
+        <section className='my-container py-20'>
             <div className='text-center pb-8'>
                 <p>My Showcase</p>
                 <h3 className='text-4xl font-semibold'>The Best & Recent Projects</h3>
             </div>
             {/* projects area */}
-            <div className='grid grid-cols-3 gap-4 justify-between'>
+            <div className='grid grid-cols-3 gap-6 justify-between'>
                 <div className='show-pro'>
                     <div className=''>
                         <img src="/pro.jpg" alt="" />
