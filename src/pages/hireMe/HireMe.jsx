@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HireMe = () => {
   return (
@@ -7,9 +8,9 @@ const HireMe = () => {
         <h1 className="text-5xl font-bold">
           I'm Available For Any Company As Developer Position
         </h1>
-        <button className="py-4 px-6 inline mt-10 bg-[#040836] hover:bg-[#FF014F] text-white rounded-full">
+        <Link to="https://www.linkedin.com/in/ashaansojib/"><button className="py-4 px-6 inline mt-10 bg-[#040836] hover:bg-[#FF014F] text-white rounded-full">
           Hire Me Now
-        </button>
+        </button> </Link>
       </div>
       <div className="absolute right-0 top-36">
         <img src="/sittng.png" alt="" />

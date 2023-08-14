@@ -12,6 +12,10 @@ const router = createBrowserRouter([
                 element: <Home />
             }
         ]
+    },
+    {
+        path: '*',
+        element: <a href="/"><h2 className="text-center p-4 underline">You Are A Mad ? Click to Go Home</h2></a>
     }
 ]);
 export default router;

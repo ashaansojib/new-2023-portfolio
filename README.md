@@ -6,4 +6,4 @@
 * npm install react-icons --save
 * npm i react-tabs
 * npm install --save @ramonak/react-progress-bar
-* 
+* npm install @emailjs/browser --save

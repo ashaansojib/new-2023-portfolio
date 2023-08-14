@@ -1,10 +1,24 @@
-import React from "react";
-import { FaBeer, FaEnvelope, FaLocationArrow, FaMobileAlt } from "react-icons/fa";
+import React, { useRef } from "react";
+import { FaEnvelope, FaLocationArrow, FaMobileAlt } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_115c0mo', 'template_e1pd3xs', form.current, '5oDTku2IrMwZo7wxV')
+      .then((result) => {
+        // console.log(result.text);
+        form.current.reset();
+      }, (error) => {
+        alert("got an error")
+      });
+  };
   return (
     <div className="my-container py-20">
       <div className="grid grid-cols-3 justify-between items-center gap-10">
-        <div className="bg-gray-600 col-span-2 py-4">
+        <div className="bg-[#003252] col-span-2 py-4">
           <div className="py-2 px-8 w-2/3">
             <h3 className="text-4xl font-semibold">Let's Talk ?</h3>
             <p className="pt-2">
@@ -12,40 +26,38 @@ const Contact = () => {
               it, br we're right there. In the middle performance quick.
             </p>
           </div>
-          <div className="px-16 py-2 text-black">
-            <form action="">
+          <div className="px-16 py-2 ">
+            <form ref={form} onSubmit={sendEmail}>
               <input
-                type="text"
-                name="name"
+                type="text" name="form_name"
                 placeholder="Your Name"
                 id=""
-                className="inline-block p-4 w-full rounded-md"
+                className="inline-block p-4 w-full rounded-md bg-[#0D0D31]"
               />
               <div className="grid grid-cols-2 gap-6 py-2">
                 <input
-                  type="text"
-                  name="main"
+                  type="email" name="user_email"
                   placeholder="Your Email"
                   id=""
-                  className="inline-block p-4 w-full rounded-md"
+                  className="inline-block p-4 w-full rounded-md bg-[#0D0D31]"
                 />
                 <input
                   type="text"
                   name="phone"
                   placeholder="Your Phone"
                   id=""
-                  className="inline-block p-4 w-full rounded-md"
+                  className="inline-block p-4 w-full rounded-md bg-[#0D0D31]"
                 />
               </div>
               <textarea
-                name="comment"
+                name="message"
                 id=""
                 cols="30"
                 rows="6"
                 placeholder="Type Your Comment"
-                className="inline-block p-4 w-full rounded-md"
+                className="inline-block p-4 w-full rounded-md bg-[#0D0D31]"
               ></textarea>
-              <button className="py-4 px-6 inline mt-2 bg-[#040836] hover:bg-red-600 text-white rounded-full">
+              <button className="py-4 px-6 inline mt-2 bg-[#040836] hover:bg-[#FF014F] rounded-full">
                 Send Message
               </button>
             </form>

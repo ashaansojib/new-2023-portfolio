@@ -8,7 +8,7 @@ const Project = () => {
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
-    console.log(projects)
+    // console.log(projects)
     return (
         <section className='my-container py-20'>
             <div className='text-center pb-8'>
