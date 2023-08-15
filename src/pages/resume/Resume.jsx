@@ -5,9 +5,6 @@ import Skill from "./Skill";
 import Education from "./Education";
 const Resume = () => {
 
-  const biography = () => {
-    console.log("hello")
-  }
   return (
     <div className="py-20 my-container ">
       <div className="relative px-2">
@@ -23,8 +20,8 @@ const Resume = () => {
           </TabPanel>
           {/* section titile bar */}
           <TabList>
-            <div className="mx-auto lg:w-4/5 p-2 w-full rounded-full border grid grid-cols-3 justify-between items-center gap-6 bg-[#022642] absolute -top-10 lg:right-28 right-0">
-              <Tab><button onClick={biography} className="title-btn">Biography</button></Tab>
+            <div className="mx-auto lg:w-4/5 md:p-2 w-full rounded-full border grid grid-cols-3 justify-between items-center md:gap-6 bg-[#022642] absolute -top-10 lg:right-28 right-0">
+              <Tab><button className="title-btn">Biography</button></Tab>
               <Tab><button className="title-btn">Skills</button></Tab>
               <Tab><button className="title-btn">Education</button></Tab>
             </div>

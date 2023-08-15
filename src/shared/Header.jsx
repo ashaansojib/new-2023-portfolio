@@ -9,7 +9,7 @@ const Header = () => {
       <div className="my-container">
         <div className="md:grid lg:grid-cols-5 justify-between gap-4">
           <div className="col-span-3 py-20 px-2 lg:px-0">
-            <h2 className="text-5xl font-bold py-6">I'm Ashaduzzaman Sojib</h2>
+            <h2 className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman Sojib</h2>
             <TypeAnimation
               sequence={[
                 "Front-end Web Developer",
@@ -33,12 +33,13 @@ const Header = () => {
               programming languages, frameworks, and tools. I pay meticulous
               attention to every aspect of web development,{" "}
             </p>
-            <div className="flex items-center gap-3 py-4">
+            <div className="md:flex items-center gap-3">
               <Link to="https://drive.google.com/uc?export=download&id=1ur9YsDz0h-fv8Kz3iZI6AKzLVt3mJymi">
                 <button className="py-3 px-4 inline bg-[#040836] text-white rounded-md">
                   Download Resume
                 </button>
               </Link>
+              <div className="flex items-center gap-3 py-4">
               <Link
                 to="https://github.com/ashaansojib"
                 target="_blank"
@@ -69,6 +70,7 @@ const Header = () => {
               >
                 <FaPenFancy />
               </Link>
+              </div>
             </div>
           </div>
           <div className="py-12 px-2 flex lg:justify-end justify-center col-span-2">

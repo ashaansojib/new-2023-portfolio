@@ -57,3 +57,7 @@ img{
 .nav-icon{
   @apply block md:hidden text-3xl cursor-pointer
 }
+/* biodata css */
+.bio-info{
+  @apply md:flex justify-between items-center py-2 border-b border-gray-600
+}
