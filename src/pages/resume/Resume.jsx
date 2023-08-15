@@ -9,8 +9,8 @@ const Resume = () => {
     console.log("hello")
   }
   return (
-    <div className="px-4 py-20 my-container ">
-      <div className="relative">
+    <div className="py-20 my-container ">
+      <div className="relative px-2">
         <Tabs>
           <TabPanel>
             <Bio />

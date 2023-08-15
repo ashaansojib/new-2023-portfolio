@@ -20,10 +20,10 @@ img{
 }
 /* #FF014F  */
 .active{
-  @apply px-4 py-2 rounded-lg bg-[#FF014F] font-medium
+  @apply px-4 py-2 mr-1 rounded-lg bg-[#FF014F] font-medium inline-block
 }
 .default{
-  @apply px-4 py-2 rounded-lg hover:bg-[#FF014F] font-medium
+  @apply px-4 py-2 mr-1 rounded-lg hover:bg-[#FF014F] font-medium inline-block
 }
 /* projects section css */
 .project-info{
@@ -43,4 +43,15 @@ img{
 /* resume section */
 .title-btn{
   @apply p-4 text-center rounded-full hover:bg-[#FF014F] font-medium  w-full inline-block
+}
+
+/* nav css */
+.nav-menu{
+  @apply lg:flex justify-between items-center
+}
+.nav-menu li{
+  @apply list-none pt-2 md:pt-0
+}
+.nav-icon{
+  @apply block md:hidden text-3xl cursor-pointer
 }

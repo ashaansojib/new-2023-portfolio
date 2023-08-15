@@ -63,7 +63,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="">
+        <div>
           <div className="md:flex gap-4 items-center p-2">
             <FaEnvelope className="text-5xl bg-[#00C0FF] p-2 rounded-md" />
             <div>
