@@ -13,17 +13,18 @@ const Service = () => {
                 <div>
                     <img className='w-[100px] h-[120px] py-3' src="/1-1.png" alt="" />
                     <h4 className='text-2xl font-bold py-2'>Front-End Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id doloribus dolorum consequuntur cupiditate eligendi vel? Natus quibusdam, illo architecto harum quis similique, asperiores eaque perspiciatis dolorum, repellendus ipsum facilis.</p>
+                    <p>Front-end developers are responsible for creating the user-facing components of a website or web application. I can work with HTML, CSS, and JavaScript to design and implement the visual and interactive elements that users interact with directly. My role involves translating design mockups into functional user interfaces.</p>
                 </div>
                 <div>
                     <img className='w-[100px] h-[120px] py-3' src="/2.png" alt="" />
                     <h4 className='text-2xl font-bold py-2'>Jr. Backend Developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id doloribus dolorum consequuntur cupiditate eligendi vel? Natus quibusdam, illo architecto harum quis similique, asperiores eaque perspiciatis dolorum, repellendus ipsum facilis.</p>
+                    <p>Junior backend developers are entry-level professionals responsible for building and maintaining the server-side logic of web applications. I can work with Nodejs, Expressjs, JavaScript, MongoDB, MyQSL Etc, I'm involve handling data storage, managing user authentication, and implementing the application's core functionality.</p>
                 </div>
                 <div>
                     <img className='w-[100px] h-[120px] py-3' src="/4.png" alt="" />
                     <h4 className='text-2xl font-bold py-2'>MERN Stack Developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste id doloribus dolorum consequuntur cupiditate eligendi vel? Natus quibusdam, illo architecto harum quis similique, asperiores eaque perspiciatis dolorum, repellendus ipsum facilis.</p>
+                    <p>MERN stack developers specialize in creating web applications using a specific technology stack: MongoDB (database), Express.js (web application framework), React (front-end library), and Node.js (server-side runtime). As I'm a Web Developer handle both front-end and back-end development.
+                    </p>
                 </div>
             </div>
         </section>
