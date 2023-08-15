@@ -26,7 +26,7 @@ const Contact = () => {
               it, br we're right there. In the middle performance quick.
             </p>
           </div>
-          <div className="px-16 py-2 ">
+          <div className="lg:px-16 py-2 px-2">
             <form ref={form} onSubmit={sendEmail}>
               <input
                 type="text" name="form_name"

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HireMe = () => {
   return (
     <div className="my-container py-20 mb-10 bg-[#022642] relative">
-      <div className="mx-auto text-center w-2/3">
+      <div className="mx-auto text-center md:w-2/3">
         <h1 className="text-5xl font-bold">
           I'm Available For Any Company As Developer Position
         </h1>
