@@ -2,8 +2,8 @@ import React from 'react';
 
 const Bio = () => {
     return (
-        <div className="border px-6 pt-20 pb-14 relative w-full h-full grid grid-cols-2 justify-between gap-8">
-            <div className="p-2">
+        <div className="border px-6 pt-20 pb-14 lg:relative grid grid-cols-2 justify-between gap-8">
+            <div className="lg:p-2">
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                     <p className="font-medium text-xl">Name:</p>
                     <p className="text-gray-300">Ashaduzzaman Sojib</p>
@@ -21,7 +21,7 @@ const Bio = () => {
                     <p className="text-gray-300">24</p>
                 </div>
             </div>
-            <div className=" p-2">
+            <div className="lg:p-2">
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                     <p className="font-medium text-xl">Location:</p>
                     <p className="text-gray-300">LalmonirHat, Rongpur, Bangladesh</p>

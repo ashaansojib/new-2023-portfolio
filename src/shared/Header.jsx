@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <div className="my-container">
         <div className="md:grid lg:grid-cols-5 justify-between gap-4">
-          <div className="col-span-3 py-20">
+          <div className="col-span-3 py-20 px-2 lg:px-0">
             <h2 className="text-5xl font-bold py-6">I'm Ashaduzzaman Sojib</h2>
             <TypeAnimation
               sequence={[
@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="py-12 px-2 w-full flex justify-end col-span-2">
+          <div className="py-12 px-2 w-full flex lg:justify-end col-span-2">
             <img className="" src="/mypp-modified.png" alt="" />
           </div>
           {/* <div className='flex md:justify-end justify-center pt-2 lg:pt-0'>

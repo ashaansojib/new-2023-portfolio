@@ -16,7 +16,7 @@ const Project = () => {
                 <h3 className='text-4xl font-semibold'>The Best & Recent Projects</h3>
             </div>
             {/* projects area */}
-            <div className='grid grid-cols-3 gap-6 justify-between'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 justify-between p-2 md:p-2'>
                 {
                     projects.map((pro) => <div
                         key={pro._id} className='show-pro'>

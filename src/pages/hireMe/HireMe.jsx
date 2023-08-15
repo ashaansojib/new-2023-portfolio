@@ -12,7 +12,7 @@ const HireMe = () => {
           Hire Me Now
         </button> </Link>
       </div>
-      <div className="absolute right-0 top-36">
+      <div className="absolute right-0 md:top-36">
         <img src="/sittng.png" alt="" />
       </div>
     </div>

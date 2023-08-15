@@ -17,7 +17,7 @@ const Contact = () => {
   };
   return (
     <div className="my-container py-20">
-      <div className="grid grid-cols-3 justify-between items-center gap-10">
+      <div className="grid lg:grid-cols-3 grid-cols-2 justify-between items-center gap-10">
         <div className="bg-[#003252] col-span-2 py-4">
           <div className="py-2 px-8 w-2/3">
             <h3 className="text-4xl font-semibold">Let's Talk ?</h3>
@@ -63,22 +63,22 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="md:space-y-12">
-          <div className="flex gap-4 items-center">
+        <div className="">
+          <div className="md:flex gap-4 items-center p-2">
             <FaEnvelope className="text-5xl bg-[#00C0FF] p-2 rounded-md" />
             <div>
               <p>My Email</p>
               <h3 className="font-medium text-gray-400">ashaduzzamansojib67@gmail.com</h3>
             </div>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="md:flex gap-4 items-center p-2">
             <FaLocationArrow className="text-5xl bg-[#FF014F] p-2 rounded-md" />
             <div>
               <p>Address</p>
               <h3 className="font-medium text-gray-400">LalmonirHat, Rongpur</h3>
             </div>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="md:flex gap-4 items-center p-2">
             <FaMobileAlt className="text-5xl bg-[#00C0FF] p-2 rounded-md" />
             <div>
               <p>Contact Number</p>

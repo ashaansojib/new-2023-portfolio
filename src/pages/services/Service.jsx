@@ -9,7 +9,7 @@ const Service = () => {
                 <h3 className='text-4xl font-semibold'>What I Do</h3>
             </div>
             {/* content */}
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 gap-4'>
                 <div>
                     <img className='w-[100px] h-[120px] py-3' src="/1-1.png" alt="" />
                     <h4 className='text-2xl font-bold py-2'>Front-End Development</h4>
