@@ -2,7 +2,7 @@ import React from 'react';
 
 const Education = () => {
     return (
-        <div className='border px-6 pt-20 pb-14 relative w-full h-full grid grid-cols-2 justify-between gap-8'>
+        <div className='border px-6 pt-20 pb-14 relative w-full h-full grid lg:grid-cols-2 grid-cols-1 justify-between gap-8'>
             <div className='p-4'>
                 <h3 className='text-2xl font-semibold'>B.A. Honours in English Literature</h3>
                 <p className='text-gray-300'>National University - Bangladesh</p>

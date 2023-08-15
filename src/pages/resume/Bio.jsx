@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bio = () => {
     return (
-        <div className="border px-6 pt-20 pb-14 lg:relative grid grid-cols-2 justify-between gap-8">
+        <div className="border px-6 pt-20 pb-14 lg:relative grid lg:grid-cols-2 grid-cols-1 justify-between gap-8">
             <div className="lg:p-2">
                 <div className="flex justify-between items-center py-2 border-b border-gray-600">
                     <p className="font-medium text-xl">Name:</p>

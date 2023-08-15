@@ -3,7 +3,7 @@ import React from 'react';
 
 const Skill = () => {
     return (
-        <div className='border px-6 pt-20 pb-14 relative w-full h-full grid grid-cols-2 justify-between gap-8'>
+        <div className='border px-6 pt-20 pb-14 relative w-full h-full grid lg:grid-cols-2 grid-cols-1 justify-between gap-8'>
             <div>
                 <p className='text-[20px] font-medium py-2'>React JS</p>
                 <ProgressBar completed={90} animateOnRender={true} height='13px' bgColor='#FF014F' baseBgColor='#040836'></ProgressBar>

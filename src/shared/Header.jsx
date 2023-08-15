@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="py-12 px-2 w-full flex lg:justify-end col-span-2">
+          <div className="py-12 px-2 flex lg:justify-end justify-center col-span-2">
             <img className="" src="/mypp-modified.png" alt="" />
           </div>
           {/* <div className='flex md:justify-end justify-center pt-2 lg:pt-0'>
