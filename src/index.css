@@ -25,7 +25,7 @@ img{
   @apply px-4 py-2 mr-1 rounded-lg bg-[#FF014F] font-medium inline-block
 }
 .default{
-  @apply px-4 py-2 mr-1 rounded-lg hover:bg-[#FF014F] font-medium inline-block
+  @apply px-4 py-2 mr-1 rounded-lg hover:bg-[#FF014F] font-medium inline-block ease-in duration-300
 }
 /* projects section css */
 .project-info{
@@ -35,16 +35,14 @@ img{
   @apply border relative hover:border border-green-600
 }
 .show-pro:hover .hide-pro{
-  display: block;
-  transform: scaleY(1);
-  transition: all 1s;
+  @apply block transition ease-in duration-500;
 }
 .hide-pro{
-  @apply absolute bottom-0 w-full p-4 bg-[#040836] text-white left-0 hidden
+  @apply absolute bottom-0 w-full p-4 bg-[#040836] text-white left-0 hidden ;
 }
 /* resume section */
 .title-btn{
-  @apply p-4 text-center rounded-full hover:bg-[#FF014F] font-medium  w-full inline-block
+  @apply p-4 text-center rounded-full hover:bg-[#FF014F] font-medium  w-full inline-block ease-in duration-500
 }
 
 /* nav css */
@@ -60,4 +58,11 @@ img{
 /* biodata css */
 .bio-info{
   @apply md:flex justify-between items-center py-2 border-b border-gray-600
+}
+
+.hire-me-btn{
+  @apply py-4 px-6 inline mt-10 bg-[#040836] hover:bg-[#FF014F] text-white rounded-full ease-in duration-300
+}
+.send-btn{
+  @apply py-4 px-6 inline mt-2 bg-[#040836] hover:bg-[#FF014F] rounded-full ease-in duration-300
 }

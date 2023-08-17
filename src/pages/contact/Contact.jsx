@@ -57,7 +57,7 @@ const Contact = () => {
                 placeholder="Type Your Comment"
                 className="inline-block p-4 w-full rounded-md bg-[#0D0D31]"
               ></textarea>
-              <button className="py-4 px-6 inline mt-2 bg-[#040836] hover:bg-[#FF014F] rounded-full">
+              <button className="send-btn">
                 Send Message
               </button>
             </form>

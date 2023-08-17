@@ -8,7 +8,7 @@ const HireMe = () => {
         <h1 className="text-5xl font-bold">
           I'm Available For Any Company As Developer Position
         </h1>
-        <Link to="https://www.linkedin.com/in/ashaansojib/"><button className="py-4 px-6 inline mt-10 bg-[#040836] hover:bg-[#FF014F] text-white rounded-full">
+        <Link to="https://www.linkedin.com/in/ashaansojib/"><button className="hire-me-btn">
           Hire Me Now
         </button> </Link>
       </div>
