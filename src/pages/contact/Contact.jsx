@@ -16,7 +16,7 @@ const Contact = () => {
       });
   };
   return (
-    <div className="my-container py-20">
+    <div id="contact" className="my-container py-20">
       <div className="grid lg:grid-cols-3 grid-cols-2 justify-between items-center gap-10">
         <div className="bg-[#003252] col-span-2 py-4">
           <div className="py-2 px-8 w-2/3">

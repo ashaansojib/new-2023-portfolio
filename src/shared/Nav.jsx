@@ -34,21 +34,27 @@ const Nav = () => {
                     }
                     </div>
                     <div className={`nav-menu ${responsive ? 'hidden' : 'block absolute top-20 left-0 p-2 w-[250px] bg-gray-400'}`}>
-                        <li>
+                        {/* <li>
                             <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/">Home</NavLink>
                         </li>
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/resume">Resume</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/project">Project</NavLink>
+                            <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/sa"><a href="#projects">Projects</a></NavLink>
                         </li>
                         <li>
                             <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/about">About Me</NavLink>
                         </li>
                         <li>
-                            <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/contact">Contact</NavLink>
-                        </li>
+                            <NavLink className={({ isActive }) => isActive ? 'active' : 'default'} to="/asd">Contact</NavLink>
+                        </li> */}
+                        <li><a className='active' href="/">Home</a></li>
+                        <li><a className='default' href="#services">Services</a></li>
+                        <li><a className='default' href="#projects">Projects</a></li>
+                        <li><a className='default' href="#resume">Resume</a></li>
+                        <li><a className='default' href="#contact">Contact</a></li>
+                        <li><a className='default' href="#hireMe">HireMe</a></li>
                     </div>
                     {/* <div className='text-end'>
                         <button className='py-2 px-4 inline bg-green-500 text-white font-medium hover:bg-black transition'>Hire Me !</button>

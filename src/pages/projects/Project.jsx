@@ -10,7 +10,7 @@ const Project = () => {
     }, [])
     // console.log(projects)
     return (
-        <section className='my-container py-20'>
+        <section id='projects' className='my-container py-20'>
             <div className='text-center pb-8'>
                 <p>My Showcase</p>
                 <h3 className='text-4xl font-semibold'>The Best & Recent Projects</h3>

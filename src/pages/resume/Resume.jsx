@@ -6,7 +6,7 @@ import Education from "./Education";
 const Resume = () => {
 
   return (
-    <div className="py-20 my-container ">
+    <div id="resume" className="py-20 my-container ">
       <div className="relative px-2">
         <Tabs>
           <TabPanel>
