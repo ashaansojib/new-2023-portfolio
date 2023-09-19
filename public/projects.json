@@ -28,8 +28,8 @@
         "pLink": "https://tourmaline-raindrop-6c4d11.netlify.app/",
         "pName": "Job Hunting",
         "imgLink": "https://i.ibb.co/0YrSKzG/Screenshot-from-2023-07-01-18-08-14.png",
-        "backend": "",
-        "frontend": ""
+        "backend": "https://github.com/ashaansojib/a-9.git",
+        "frontend": "https://github.com/ashaansojib/a-9.git"
     },
     {
         "_id": "649dd991938e98b935a5b3f5",
@@ -38,5 +38,45 @@
         "imgLink": "https://i.ibb.co/CKJ4451/Screenshot-from-2023-07-01-18-15-40.png",
         "backend": "",
         "frontend": ""
+    },
+    {
+        "_id": "649dd991938e98b935a5b3f6",
+        "pLink": "https://teal-biscuit-792e6a.netlify.app/",
+        "pName": "AI Universe Hub",
+        "imgLink": "/a-6.png",
+        "backend": "",
+        "frontend": "https://github.com/ashaansojib/a6-AI-Universe-Hub.git"
+    },
+    {
+        "_id": "649dd991938e98b935a5b3f7",
+        "pLink": "https://charming-cascaron-e12ad6.netlify.app/",
+        "pName": "Geometric Operation",
+        "imgLink": "/a-5.png",
+        "backend": "",
+        "frontend": ""
+    },
+    {
+        "_id": "649dd991938e98b935a5b3f8",
+        "pLink": "https://st-management.netlify.app/",
+        "pName": "ST - Management App",
+        "imgLink": "/st.png",
+        "backend": "https://github.com/ashaansojib/st-management-server",
+        "frontend": "https://github.com/ashaansojib/st-packages-management"
+    },
+    {
+        "_id": "649dd991938e98b935a5b3f9",
+        "pLink": "https://software-blog-bde8d.web.app/",
+        "pName": "Blog With Redux MUI",
+        "imgLink": "/blog.png",
+        "backend": "https://github.com/ashaansojib/blog-with-redux-server",
+        "frontend": "https://github.com/ashaansojib/blog-with-redux"
+    },
+    {
+        "_id": "649dd991938e98b935a5b3f6",
+        "pLink": "http://my-aircng-project.netlify.app/",
+        "pName": "My Simple AirBNB",
+        "imgLink": "/air.png",
+        "backend": "https://github.com/ashaansojib/aircng-server-site",
+        "frontend": "https://github.com/ashaansojib/aircnc-project"
     }
 ]

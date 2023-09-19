@@ -24,7 +24,7 @@ const Project = () => {
                             <img src={pro.imgLink} alt="" />
                         </div>
                         <div className='hide-pro'>
-                            <p className='text-xl'>EdTech - Learning English</p>
+                            <p className='text-xl'>{pro.pName}</p>
                             <div className='flex gap-2'>
                                 <Link to={pro.pLink}><button className='underline p-1'>Live Site</button></Link>
                                 <Link to={pro?.frontend}><button className='underline p-1'>FrontEnd</button></Link>
