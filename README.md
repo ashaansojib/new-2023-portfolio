@@ -7,3 +7,4 @@
 * npm i react-tabs
 * npm install --save @ramonak/react-progress-bar
 * npm install @emailjs/browser --save
+* npm install aos --save

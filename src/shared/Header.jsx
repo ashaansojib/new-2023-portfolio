@@ -9,7 +9,7 @@ const Header = () => {
       <div className="my-container">
         <div className="md:grid lg:grid-cols-5 justify-between gap-4">
           <div className="col-span-3 py-20 px-2 lg:px-0">
-            <h2 className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman Sojib</h2>
+            <h2 data-aos="fade-down" data-aos-duration="2000" className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman Sojib</h2>
             <TypeAnimation
               sequence={[
                 "Front-end Web Developer",
@@ -26,14 +26,14 @@ const Header = () => {
               style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
             />
-            <p className="text-gray-100 py-2">
+            <p data-aos="fade-up" data-aos-duration="3000" className="text-gray-100 py-2">
               As a professional web developer, i have many skills, qualities,
               and contributions to the field. I possess a high level of
               technical expertise in web development, including proficiency in
               programming languages, frameworks, and tools. I pay meticulous
               attention to every aspect of web development,{" "}
             </p>
-            <div className="md:flex items-center gap-3">
+            <div data-aos="zoom-in" data-aos-duration="3000" className="md:flex items-center gap-3">
               <Link to="https://drive.google.com/uc?export=download&id=1ur9YsDz0h-fv8Kz3iZI6AKzLVt3mJymi">
                 <button className="py-3 px-4 inline bg-[#040836] text-white rounded-md">
                   Download Resume
@@ -76,9 +76,6 @@ const Header = () => {
           <div className="py-12 px-2 flex lg:justify-end justify-center col-span-2">
             <img className="" src="/mypp-modified.png" alt="" />
           </div>
-          {/* <div className='flex md:justify-end justify-center pt-2 lg:pt-0'>
-                            
-                        </div> */}
         </div>
       </div>
     </header>
