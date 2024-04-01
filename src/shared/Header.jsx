@@ -5,7 +5,7 @@ import { FaFacebook, FaGithub, FaLinkedinIn, FaPenFancy } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header>
+    <header id="home" className="md:h-screen">
       <div className="my-container">
         <div className="md:grid lg:grid-cols-5 justify-between gap-4">
           <div className="col-span-3 py-20 px-2 lg:px-0">

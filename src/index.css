@@ -22,10 +22,10 @@ img{
 }
 /* #FF014F  */
 .active{
-  @apply px-4 py-2 mr-1 rounded-lg bg-[#FF014F] font-medium inline-block
+  @apply px-4 py-2 mr-1 font-medium inline-block border-b border-red-400 rounded-lg text-cyan-500 w-full
 }
 .default{
-  @apply px-4 py-2 mr-1 rounded-lg hover:bg-[#FF014F] font-medium inline-block ease-in duration-300
+  @apply px-4 py-2 mr-1 font-medium inline-block w-full
 }
 /* projects section css */
 .project-info{
