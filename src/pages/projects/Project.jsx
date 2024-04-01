@@ -10,10 +10,10 @@ const Project = () => {
     }, [])
     // console.log(projects)
     return (
-        <section id='projects' className='my-container py-20'>
+        <section id='projects' className='my-container pt-20'>
             <div data-aos="fade-up" data-aos-duration="2000" className='text-center py-2'>
                 <p>My Showcase</p>
-                <h3 className='text-4xl font-semibold'>The Best & Recent Projects</h3>
+                <h3 className='my-text-gradient'>The Best & Recent Projects</h3>
             </div>
             {/* projects category */}
             <div data-aos="zoom-in" data-aos-duration="2000" className='flex justify-center items-center py-2'>

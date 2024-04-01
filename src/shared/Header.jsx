@@ -5,11 +5,11 @@ import { FaFacebook, FaGithub, FaLinkedinIn, FaPenFancy } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header id="home" className="md:h-screen">
+    <header id="home">
       <div className="my-container">
         <div className="md:grid lg:grid-cols-5 justify-between gap-4">
           <div className="col-span-3 py-20 px-2 lg:px-0">
-            <h2 data-aos="fade-down" data-aos-duration="2000" className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman Sojib</h2>
+            <h2 data-aos="fade-down" data-aos-duration="2000" className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman <span>Sojib</span></h2>
             <TypeAnimation
               sequence={[
                 "Front-end Web Developer",

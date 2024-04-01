@@ -2,11 +2,11 @@ import React from 'react';
 
 const Service = () => {
     return (
-        <section id='services' className='my-container bg-[#022642] py-16'>
+        <section id='services' className='my-container bg-[#022642] py-20'>
             {/* section title */}
             <div data-aos="fade-up" data-aos-duration="2000" className='text-center pb-8'>
                 <p>MY EXPERIENCE</p>
-                <h3 className='text-4xl font-semibold'>What I Do</h3>
+                <h3 className='my-text-gradient'>What I Do</h3>
             </div>
             {/* content */}
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 px-6'>

@@ -7,7 +7,11 @@ const Resume = () => {
 
   return (
     <div id="resume" className="py-20 my-container ">
-      <div className="relative px-2">
+      <div className='text-center py-2'>
+        <p>About Myself</p>
+        <h3 className='my-text-gradient'>Me & My Qualifications</h3>
+      </div>
+      <div className="relative px-2 mt-10">
         <Tabs>
           <TabPanel>
             <Bio />

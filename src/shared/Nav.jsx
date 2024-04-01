@@ -47,7 +47,7 @@ const Nav = () => {
     };
 
     return (
-        <nav className={`sticky top-0 z-10 border-b border-gray-600 ${scrollBg ? 'bg-[#003d63] border-none transition-all' : ''}`}>
+        <nav className={`sticky top-0 z-50 border-b border-gray-600 ${scrollBg ? 'bg-[#003d63] border-none transition-all' : ''}`}>
             <div className='my-container'>
                 <div className='flex justify-between items-center gap-2 p-2'>
                     <div className='h-[58px]'>
