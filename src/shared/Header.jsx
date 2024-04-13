@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebook, FaGithub, FaLinkedinIn, FaPenFancy } from "react-icons/fa";
+import { SiMongodb, SiTailwindcss } from "react-icons/si"
+import { FaFacebook, FaGithub, FaLinkedinIn, FaNodeJs, FaPenFancy, FaReact } from "react-icons/fa";
 
 const Header = () => {
   return (
     <header id="home">
       <div className="my-container">
         <div className="md:grid lg:grid-cols-5 grid-cols-1 justify-between gap-4">
-          <div className="col-span-3 md:py-20 px-2 lg:px-0">
+          <div className="col-span-3 md:py-12 px-2 lg:px-0">
             <h2 data-aos="fade-down" data-aos-duration="2000" className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman <span>Sojib</span></h2>
             <TypeAnimation
               sequence={[
@@ -73,11 +74,26 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="md:py-12 px-2 lg:col-span-2 border">
-            <div className="w-full flex justify-center items-center">
-              <img className="w-[300px]" src="/myBanner.png" alt="" />
+          <div className="lg:col-span-2">
+            <div className="logo-box">
+              <FaReact className="text-4xl" />
+            </div>
+            <div className="logo-box">
+              <SiTailwindcss className="text-4xl" />
+            </div>
+            <div className="logo-box">
+              <FaNodeJs className="text-4xl" />
+            </div>
+            <div className="logo-box">
+              <SiMongodb className="text-4xl" />
             </div>
           </div>
+          {/* <div className="rounded-full m-4 border px-2 lg:col-span-2">
+
+            <div className="w-full h-full flex justify-center items-center ">
+              <img className="rounded-full w-[300px]" src="/final-logo.png" alt="logo not found!" />
+            </div>
+          </div> */}
         </div>
       </div>
     </header>
