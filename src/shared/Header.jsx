@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <header id="home">
       <div className="my-container">
-        <div className="md:grid lg:grid-cols-5 justify-between gap-4">
-          <div className="col-span-3 py-20 px-2 lg:px-0">
+        <div className="md:grid lg:grid-cols-5 grid-cols-1 justify-between gap-4">
+          <div className="col-span-3 md:py-20 px-2 lg:px-0">
             <h2 data-aos="fade-down" data-aos-duration="2000" className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman <span>Sojib</span></h2>
             <TypeAnimation
               sequence={[
@@ -40,41 +40,43 @@ const Header = () => {
                 </button>
               </Link>
               <div className="flex items-center gap-3 py-4">
-              <Link
-                to="https://github.com/ashaansojib"
-                target="_blank"
-                className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F] tooltip tooltip-top"
-                data-tip="Go Github"
-              >
-                <FaGithub />
-              </Link>
-              <Link
-                to="https://www.facebook.com/khusbusojib/"
-                target="_blank"
-                className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
-                data-tip="My Facebook"
-              >
-                <FaFacebook />
-              </Link>
-              <Link to="https://www.linkedin.com/in/ashaansojib/"
-                className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
-                data-tip="My Linkedin"
-              >
-                <FaLinkedinIn />
-              </Link>
-              <Link
-                to="https://drive.google.com/file/d/1kVxYf6NkBNxQPThhg49NtRSNDt_blHJy/view"
-                target="_blank"
-                className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
-                data-tip="My Cover Letter"
-              >
-                <FaPenFancy />
-              </Link>
+                <Link
+                  to="https://github.com/ashaansojib"
+                  target="_blank"
+                  className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F] tooltip tooltip-top"
+                  data-tip="Go Github"
+                >
+                  <FaGithub />
+                </Link>
+                <Link
+                  to="https://www.facebook.com/khusbusojib/"
+                  target="_blank"
+                  className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
+                  data-tip="My Facebook"
+                >
+                  <FaFacebook />
+                </Link>
+                <Link to="https://www.linkedin.com/in/ashaansojib/"
+                  className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
+                  data-tip="My Linkedin"
+                >
+                  <FaLinkedinIn />
+                </Link>
+                <Link
+                  to="https://drive.google.com/file/d/1kVxYf6NkBNxQPThhg49NtRSNDt_blHJy/view"
+                  target="_blank"
+                  className="p-2 text-2xl inline rounded-full hover:bg-[#FF014F]  tooltip tooltip-top"
+                  data-tip="My Cover Letter"
+                >
+                  <FaPenFancy />
+                </Link>
               </div>
             </div>
           </div>
-          <div className="py-12 px-2 flex lg:justify-end justify-center col-span-2">
-            <img className="" src="/mypp-modified.png" alt="" />
+          <div className="md:py-12 px-2 lg:col-span-2 border">
+            <div className="w-full flex justify-center items-center">
+              <img className="w-[300px]" src="/myBanner.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
