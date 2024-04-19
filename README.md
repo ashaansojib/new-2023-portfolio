@@ -8,3 +8,5 @@
 * npm install --save @ramonak/react-progress-bar
 * npm install @emailjs/browser --save
 * npm install aos --save
+* npm install @reduxjs/toolkit react-redux
+* npm install react-hook-form
