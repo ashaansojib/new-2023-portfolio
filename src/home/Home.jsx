@@ -3,10 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from '../shared/Header';
 import Service from '../pages/services/Service';
-import Project from '../pages/projects/Project';
 import Resume from '../pages/resume/Resume';
 import HireMe from '../pages/hireMe/HireMe';
 import Contact from '../pages/contact/Contact';
+import Projects from '../pages/projects/Projects';
 
 const Home = () => {
     useEffect(() => {
@@ -16,7 +16,7 @@ const Home = () => {
         <>
             <Header />
             <Service />
-            <Project />
+            <Projects />
             <Resume />
             <HireMe />
             <Contact />

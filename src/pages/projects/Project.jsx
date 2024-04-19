@@ -1,49 +1,48 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const Project = () => {
-    const [projects, setProjects] = useState([]);
-    useEffect(() => {
-        fetch('/projects.json')
-            .then(res => res.json())
-            .then(data => setProjects(data))
-    }, [])
-    // console.log(projects)
-    return (
-        <section id='projects' className='my-container pt-20'>
-            <div data-aos="fade-up" data-aos-duration="2000" className='text-center py-2'>
-                <p>My Showcase</p>
-                <h3 className='my-text-gradient'>The Best & Recent Projects</h3>
-            </div>
-            {/* projects category */}
-            <div data-aos="zoom-in" data-aos-duration="2000" className='flex justify-center items-center py-2'>
-                <button className='py-1 px-4 bg-blue-500 rounded-md'>All</button>
-                <button className='py-1 px-4 '>MERN</button>
-                <button className='py-1 px-4'>Landing</button>
-                <button className='py-1 px-4'>Portfolio</button>
-                <button className='py-1 px-4'>JavaScript</button>
-            </div>
-            {/* projects area */}
-            <div className='grid lg:grid-cols-3 grid-cols-1 gap-6 justify-between p-2 md:p-2'>
-                {
-                    projects.map((pro) => <div
-                        key={pro._id} className='show-pro'>
-                        <div className=''>
-                            <img src={pro.imgLink} alt="" />
-                        </div>
-                        <div className='hide-pro'>
-                            <p className='text-xl'>{pro.pName}</p>
-                            <div className='flex gap-2'>
-                                <Link to={pro.pLink}><button className='underline p-1'>Live Site</button></Link>
-                                <Link to={pro?.frontend}><button className='underline p-1'>FrontEnd</button></Link>
-                                <Link to={pro?.backend}><button className='underline p-1'>Backend</button></Link>
-                            </div>
-                        </div>
-                    </div>)
-                }
-            </div>
-        </section>
-    );
+const Project = ({ pro }) => {
+  const { category, filename, image, links, name, tools } = pro;
+  console.log(pro);
+  return (
+    <div className="project-container">
+      <div className="project-image">
+        <img src={image} alt="image not found!" />
+      </div>
+      <div className="ps-4">
+        <h3 className="text-3xl pb-2 font-bold">{name}</h3>
+        <button
+          tabIndex={0}
+          role="button"
+          className="dropdown dropdown-hover px-3 py-2 bg-blue-500 font-semibold my-2 rounded-md"
+        ><ul
+        tabIndex={0}
+        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-8"
+      >
+        <li>
+          <Link target="_blank" to={links.frontEnd}>FrontEnd</Link>
+        </li>
+        <li>
+          <Link target="_blank" to={links.backEnd}>Backend</Link>
+        </li>
+      </ul>
+            <FaGithub className="inline pr-1 text-2xl" />
+          Code Link
+        </button>
+        
+        {/* used tools */}
+        <div>
+          <p className="font-semibold text-gray-500">- Used Technology</p>
+          {tools?.map((tool, i) => (
+            <button className="btn btn-outline m-1 btn-sm" key={i + 1}>
+              {tool}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Project;

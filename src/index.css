@@ -31,17 +31,11 @@ img{
   @apply px-4 py-2 mr-1 font-medium inline-block w-full
 }
 /* projects section css */
-.project-info{
-  @apply block
+.project-container{
+  @apply grid lg:grid-cols-2 grid-cols-1 gap-3 justify-between items-center pt-2 pb-6 border-t
 }
-.show-pro{
-  @apply border relative hover:border border-green-600
-}
-.show-pro:hover .hide-pro{
-  @apply block transition ease-in duration-500;
-}
-.hide-pro{
-  @apply absolute bottom-0 w-full p-4 bg-[#040836] text-white left-0 hidden ;
+.project-container:hover .project-image{
+  
 }
 /* resume section */
 .title-btn{
@@ -69,3 +63,7 @@ img{
 .send-btn{
   @apply py-4 px-6 inline mt-2 bg-[#040836] hover:bg-[#FF014F] rounded-full ease-in duration-300
 }
+
+/* hero section */
+
+/*  */

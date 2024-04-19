@@ -74,26 +74,28 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2">
-            <div className="logo-box">
-              <FaReact className="text-4xl" />
+          {/* <div className="lg:col-span-2 rounded-full border m-4">
+            <div className="relative flex justify-center items-center cursor-pointer h-full">
+              <div className="logo-box">
+                <FaReact className="text-4xl" />
+              </div>
+              <div className="logo-box">
+                <SiTailwindcss className="text-4xl" />
+              </div>
+              <div className="logo-box">
+                <FaNodeJs className="text-4xl" />
+              </div>
+              <div className="logo-box">
+                <SiMongodb className="text-4xl" />
+              </div>
             </div>
-            <div className="logo-box">
-              <SiTailwindcss className="text-4xl" />
-            </div>
-            <div className="logo-box">
-              <FaNodeJs className="text-4xl" />
-            </div>
-            <div className="logo-box">
-              <SiMongodb className="text-4xl" />
-            </div>
-          </div>
-          {/* <div className="rounded-full m-4 border px-2 lg:col-span-2">
+          </div> */}
+          <div className="rounded-full m-4 border px-2 lg:col-span-2">
 
             <div className="w-full h-full flex justify-center items-center ">
               <img className="rounded-full w-[300px]" src="/final-logo.png" alt="logo not found!" />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </header>
