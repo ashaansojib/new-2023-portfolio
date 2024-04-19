@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Project = ({ pro }) => {
   const { category, filename, image, links, name, tools } = pro;
-  console.log(pro);
+  
   return (
     <div className="project-container">
       <div className="project-image">

@@ -41,7 +41,9 @@ img{
 .title-btn{
   @apply p-4 text-center rounded-full hover:bg-[#FF014F] font-medium  w-full inline-block ease-in duration-500
 }
-
+.title-btn-active{
+  @apply p-4 text-center rounded-full bg-[#FF014F] font-medium  w-full inline-block ease-in duration-500
+}
 /* nav css */
 .nav-menu{
   @apply lg:flex justify-between items-center
