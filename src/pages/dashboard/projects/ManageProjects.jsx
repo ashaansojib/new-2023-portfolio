@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useAddProjectMutation, useGetProjectsQuery, useRemoveProjectMutation } from "../../../redux/features/ProjectApi";
-import Loader from "../../../components/Loader";
+import {
+  useAddProjectMutation,
+  useGetProjectsQuery,
+  useRemoveProjectMutation,
+} from "../../../redux/features/ProjectApi";
+import { PuffLoader } from "react-spinners";
 
 const ManageProjects = () => {
-  const { data: projects, isLoading: dataLoader} = useGetProjectsQuery([]);
+  const { data: projects, isLoading: dataLoader } = useGetProjectsQuery([]);
   const [removePro, { isLoading: deleteLoading }] = useRemoveProjectMutation();
   const handleRemove = (id) => {
     removePro(id);
@@ -59,7 +63,9 @@ const ManageProjects = () => {
           </thead>
           <tbody>
             {dataLoader ? (
-              <Loader />
+              <div className="w-32 mx-auto h-full">
+                <PuffLoader color="#FF014F" />
+              </div>
             ) : (
               projects?.data?.map((project, index) => (
                 <tr key={project._id} className="bg-base-200">
@@ -150,7 +156,9 @@ const ManageProjects = () => {
           </select>
         </div>
         {createLoader ? (
-          <Loader />
+          <div className="w-32 mx-auto h-full">
+            <PuffLoader color="#FF014F" />
+          </div>
         ) : (
           <input type="submit" value="Published" className="send-btn" />
         )}
