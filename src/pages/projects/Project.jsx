@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Project = ({ pro }) => {
   const { category, filename, image, links, name, tools } = pro;
-
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <div className="project-container">
       <div className="project-image">
-        <img src={image} alt="image not found!" />
+        {!imageLoaded && <div className="skeleton w-[550px] h-[300px] bg-gray-700"></div>}
+        <img
+          className={`${imageLoaded ? "block" : "hidden"}`}
+          src={image}
+          alt="image not found!"
+          onLoad={() => setImageLoaded(true)}
+        />
       </div>
       <div className="ps-4">
         <h3 className="text-3xl pb-2 font-bold">{name}</h3>
