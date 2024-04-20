@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Project = ({ pro }) => {
   const { category, filename, image, links, name, tools } = pro;
-  
+
   return (
     <div className="project-container">
       <div className="project-image">
@@ -16,21 +16,26 @@ const Project = ({ pro }) => {
           tabIndex={0}
           role="button"
           className="dropdown dropdown-hover px-3 py-2 bg-blue-500 font-semibold my-2 rounded-md"
-        ><ul
-        tabIndex={0}
-        className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-8"
-      >
-        <li>
-          <Link target="_blank" to={links.frontEnd}>FrontEnd</Link>
-        </li>
-        <li>
-          <Link target="_blank" to={links.backEnd}>Backend</Link>
-        </li>
-      </ul>
-            <FaGithub className="inline pr-1 text-2xl" />
+        >
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-8"
+          >
+            <li>
+              <Link target="_blank" to={links.frontEnd}>
+                FrontEnd
+              </Link>
+            </li>
+            <li>
+              <Link target="_blank" to={links.backEnd}>
+                Backend
+              </Link>
+            </li>
+          </ul>
+          <FaGithub className="inline pr-1 text-2xl" />
           Code Link
         </button>
-        
+
         {/* used tools */}
         <div>
           <p className="font-semibold text-gray-500">- Used Technology</p>

@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Project from "./Project"
+import Project from "./Project";
+import { useGetProjectsQuery } from "../../redux/features/ProjectApi";
+import Loader from "../../components/Loader";
 const Projects = () => {
-    const [allProjects, setAllProjects] = useState([]);
-    useEffect(()=>{
-        fetch('https://dev-portfolio-server.vercel.app/api/projects')
-        .then(res => res.json())
-        .then(data => setAllProjects(data.data))
-    }, [])
+  const { data, isLoading } = useGetProjectsQuery([]);
   return (
     <section id="projects" className="my-container pt-20">
       <div
@@ -31,12 +28,11 @@ const Projects = () => {
       </div>
       {/* all projects maping */}
       <div>
-        {
-            allProjects?.map((pro)=> <Project 
-            key={pro._id}
-            pro={pro}
-            ></Project>)
-        }
+        {isLoading ? (
+          <Loader />
+        ) : (
+          data.data?.map((pro) => <Project key={pro._id} pro={pro}></Project>)
+        )}
       </div>
     </section>
   );

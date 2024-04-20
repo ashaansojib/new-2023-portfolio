@@ -8,7 +8,6 @@ const Resume = () => {
   const handleColors = (color) =>{
     setColors(color)
   }
-  console.log(colors);
   return (
     <div id="resume" className="py-20 my-container ">
       <div className="text-center py-2">
