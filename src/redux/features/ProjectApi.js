@@ -8,7 +8,7 @@ export const projectApi = createApi({
   tagTypes: ["projects"],
   endpoints: (builder) => ({
     getProjects: builder.query({
-      query: () => "/projects",
+      query: (category) => `/projects?category=${category}`,
       providesTags: ["projects"],
     }),
     addProject: builder.mutation({

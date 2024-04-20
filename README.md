@@ -10,3 +10,4 @@
 * npm install aos --save
 * npm install @reduxjs/toolkit react-redux
 * npm install react-hook-form
+* npm install --save react-spinners

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import Project from "./Project";
 import { useGetProjectsQuery } from "../../redux/features/ProjectApi";
 import Loader from "../../components/Loader";
+import { PuffLoader } from "react-spinners";
 const Projects = () => {
-  const { data, isLoading } = useGetProjectsQuery([]);
+  const [category, setCategory] = useState("all");
+  const { data, isLoading } = useGetProjectsQuery(category);
+  console.log(data);
   return (
     <section id="projects" className="my-container pt-20">
       <div
@@ -20,16 +23,28 @@ const Projects = () => {
         data-aos-duration="2000"
         className="flex justify-center items-center py-2"
       >
-        <button className="py-1 px-4 bg-blue-500 rounded-md">All</button>
-        <button className="py-1 px-4 ">MERN</button>
-        <button className="py-1 px-4">Landing</button>
-        <button className="py-1 px-4">Portfolio</button>
-        <button className="py-1 px-4">JavaScript</button>
+        <button className="py-1 px-4" onClick={() => setCategory("all")}>
+          All
+        </button>
+        <button className="py-1 px-4" onClick={() => setCategory("mern")}>
+          MERN
+        </button>
+        <button className="py-1 px-4" onClick={() => setCategory("landing")}>
+          Landing
+        </button>
+        <button className="py-1 px-4" onClick={() => setCategory("portfolio")}>
+          Portfolio
+        </button>
+        <button className="py-1 px-4" onClick={() => setCategory("javascript")}>
+          JavaScript
+        </button>
       </div>
       {/* all projects maping */}
       <div>
         {isLoading ? (
-          <Loader />
+          <div className="w-32 mx-auto h-full">
+            <PuffLoader />
+          </div>
         ) : (
           data.data?.map((pro) => <Project key={pro._id} pro={pro}></Project>)
         )}
