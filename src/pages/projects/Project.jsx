@@ -3,12 +3,14 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Project = ({ pro }) => {
-  const { category, filename, image, links, name, tools } = pro;
+  const { category, liveLink, image, links, name, tools } = pro;
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <div className="project-container">
       <div className="project-image">
-        {!imageLoaded && <div className="skeleton w-[550px] h-[300px] bg-gray-700"></div>}
+        {!imageLoaded && (
+          <div className="skeleton w-[550px] h-[300px] bg-gray-700"></div>
+        )}
         <img
           className={`${imageLoaded ? "block" : "hidden"}`}
           src={image}
@@ -18,30 +20,26 @@ const Project = ({ pro }) => {
       </div>
       <div className="ps-4">
         <h3 className="text-3xl pb-2 font-bold">{name}</h3>
-        <button
-          tabIndex={0}
-          role="button"
-          className="dropdown dropdown-hover px-3 py-2 bg-blue-500 font-semibold my-2 rounded-md"
-        >
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 mt-8"
-          >
-            <li>
-              <Link target="_blank" to={links.frontEnd}>
-                FrontEnd
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" to={links.backEnd}>
-                Backend
-              </Link>
-            </li>
-          </ul>
-          <FaGithub className="inline pr-1 text-2xl" />
-          Code Link
-        </button>
-
+        <p className="text-gray-300 italic uppercase">{category} - Category</p>
+        <div className="flex gap-3 items-center py-2">
+          <button className="btn btn-sm hover:btn-outline">
+            <Link target="_blank" to={liveLink}>
+              Live Link
+            </Link>
+          </button>
+          <button className="btn btn-sm hover:btn-outline">
+            <FaGithub className="inline pr-1 text-2xl" />
+            <Link target="_blank" to={links.frontEnd}>
+              Frontend
+            </Link>
+          </button>
+          <button className="btn btn-sm hover:btn-outline">
+            <FaGithub className="inline pr-1 text-2xl" />
+            <Link target="_blank" to={links.backEnd}>
+              Frontend
+            </Link>
+          </button>
+        </div>
         {/* used tools */}
         <div>
           <p className="font-semibold text-gray-500">- Used Technology</p>

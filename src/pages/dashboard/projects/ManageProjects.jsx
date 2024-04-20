@@ -75,7 +75,7 @@ const ManageProjects = () => {
                   <td>
                     {deleteLoading ? (
                       <div className="text-[#294d70]">
-                        <ScaleLoader height={20} color="#294d70" />
+                        <PuffLoader color="#FF014F" />
                         <span>Deleting</span>
                       </div>
                     ) : (
