@@ -5,8 +5,7 @@ import Loader from "../../components/Loader";
 import { PuffLoader } from "react-spinners";
 const Projects = () => {
   const [category, setCategory] = useState("all");
-  const { data, isLoading } = useGetProjectsQuery(category);
-  console.log(data);
+  const { data, isLoading, isFetching } = useGetProjectsQuery(category);
   return (
     <section id="projects" className="my-container pt-20">
       <div
@@ -23,27 +22,52 @@ const Projects = () => {
         data-aos-duration="2000"
         className="flex justify-center items-center py-2"
       >
-        <button className="py-1 px-4" onClick={() => setCategory("all")}>
+        <button
+          className={`py-1 px-4 ${
+            category === "all" ? "bg-blue-600 rounded-md" : "bg-none"
+          }`}
+          onClick={() => setCategory("all")}
+        >
           All
         </button>
-        <button className="py-1 px-4" onClick={() => setCategory("mern")}>
+        <button
+          className={`py-1 px-4 ${
+            category === "mern" ? "bg-blue-600 rounded-md" : "bg-none"
+          }`}
+          onClick={() => setCategory("mern")}
+        >
           MERN
         </button>
-        <button className="py-1 px-4" onClick={() => setCategory("landing")}>
+        <button
+          className={`py-1 px-4 ${
+            category === "landing" ? "bg-blue-600 rounded-md" : "bg-none"
+          }`}
+          onClick={() => setCategory("landing")}
+        >
           Landing
         </button>
-        <button className="py-1 px-4" onClick={() => setCategory("portfolio")}>
+        <button
+          className={`py-1 px-4 ${
+            category === "portfolio" ? "bg-blue-600 rounded-md" : "bg-none"
+          }`}
+          onClick={() => setCategory("portfolio")}
+        >
           Portfolio
         </button>
-        <button className="py-1 px-4" onClick={() => setCategory("javascript")}>
+        <button
+          className={`py-1 px-4 ${
+            category === "javascript" ? "bg-blue-600 rounded-md" : "bg-none"
+          }`}
+          onClick={() => setCategory("javascript")}
+        >
           JavaScript
         </button>
       </div>
       {/* all projects maping */}
       <div>
-        {isLoading ? (
+        {isLoading && isFetching ? (
           <div className="w-32 mx-auto h-full">
-            <PuffLoader />
+            <PuffLoader color="#FF014F" />
           </div>
         ) : (
           data.data?.map((pro) => <Project key={pro._id} pro={pro}></Project>)
