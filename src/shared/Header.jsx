@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-import { SiMongodb, SiTailwindcss } from "react-icons/si"
-import { FaFacebook, FaGithub, FaLinkedinIn, FaNodeJs, FaPenFancy, FaReact } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedinIn, FaPenFancy } from "react-icons/fa";
 
 const Header = () => {
   return (
     <header id="home">
       <div className="my-container">
-        <div className="md:grid lg:grid-cols-5 grid-cols-1 justify-between gap-4">
+        <div className="bg-[#040c30a4] rounded-2xl my-12 p-4 md:grid lg:grid-cols-5 grid-cols-1 justify-between gap-8">
+        <div className="lg:col-span-2">
+            <div className="w-full h-full flex justify-center items-center ">
+              <img src="/pp.png" alt="logo not found!" />
+            </div>
+          </div>
           <div className="col-span-3 md:py-12 px-2 lg:px-0">
             <h2 data-aos="fade-down" data-aos-duration="2000" className="md:text-5xl text-3xl font-bold py-6">I'm Ashaduzzaman <span>Sojib</span></h2>
             <TypeAnimation
@@ -74,28 +78,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          {/* <div className="lg:col-span-2 rounded-full border m-4">
-            <div className="relative flex justify-center items-center cursor-pointer h-full">
-              <div className="logo-box">
-                <FaReact className="text-4xl" />
-              </div>
-              <div className="logo-box">
-                <SiTailwindcss className="text-4xl" />
-              </div>
-              <div className="logo-box">
-                <FaNodeJs className="text-4xl" />
-              </div>
-              <div className="logo-box">
-                <SiMongodb className="text-4xl" />
-              </div>
-            </div>
-          </div> */}
-          <div className="rounded-full m-4 border px-2 lg:col-span-2">
-
-            <div className="w-full h-full flex justify-center items-center ">
-              <img className="rounded-full w-[300px]" src="/final-logo.png" alt="logo not found!" />
-            </div>
-          </div>
+          
         </div>
       </div>
     </header>

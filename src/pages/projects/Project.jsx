@@ -36,7 +36,7 @@ const Project = ({ pro }) => {
           <button className="btn btn-sm hover:btn-outline">
             <FaGithub className="inline pr-1 text-2xl" />
             <Link target="_blank" to={links.backEnd}>
-              Frontend
+              Backend
             </Link>
           </button>
         </div>
@@ -44,7 +44,7 @@ const Project = ({ pro }) => {
         <div>
           <p className="font-semibold text-gray-500">- Used Technology</p>
           {tools?.map((tool, i) => (
-            <button className="btn btn-outline m-1 btn-sm" key={i + 1}>
+            <button className="btn m-1 btn-sm" key={i + 1}>
               {tool}
             </button>
           ))}
