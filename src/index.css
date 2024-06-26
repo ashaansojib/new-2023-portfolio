@@ -25,7 +25,7 @@ img{
 }
 /* #FF014F  */
 .active{
-  @apply px-4 py-2 mr-1 font-medium inline-block border-b border-red-400 rounded-lg text-blue-500 w-full
+  @apply px-4 py-2 mr-1 font-medium inline-block rounded-lg text-blue-500 w-full transition-all duration-300
 }
 .default{
   @apply px-4 py-2 mr-1 font-medium inline-block w-full

@@ -3,10 +3,12 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Project = ({ pro }) => {
+  
   const { category, liveLink, image, links, name, tools } = pro;
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
-    <div className="project-container">
+    <div className="project-container ">
+      {/* images here */}
       <div className="project-image">
         {!imageLoaded && (
           <div className="skeleton w-[550px] h-[300px] bg-gray-700"></div>
@@ -18,6 +20,7 @@ const Project = ({ pro }) => {
           onLoad={() => setImageLoaded(true)}
         />
       </div>
+      {/* details here */}
       <div className="ps-4">
         <h3 className="text-3xl pb-2 font-bold">{name}</h3>
         <p className="text-gray-300 italic uppercase">{category} - Category</p>
