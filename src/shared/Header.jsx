@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <header id="home">
       <div className="my-container">
-        <div className="bg-[#040c30a4] rounded-2xl my-12 p-4 md:grid lg:grid-cols-5 grid-cols-1 justify-between gap-8">
+        <div className="bg-[#040c30a4] rounded-s-full my-12 p-4 md:grid lg:grid-cols-5 grid-cols-1 justify-between gap-8">
         <div className="lg:col-span-2">
-            <div className="w-full h-full flex justify-center items-center ">
-              <img src="/pp.png" alt="logo not found!" />
+            <div className="w-full h-full flex justify-center items-center overflow-hidden">
+              <img src="/newpp.png" alt="logo not found!" className="rounded-full" />
             </div>
           </div>
           <div className="col-span-3 md:py-12 px-2 lg:px-0">
